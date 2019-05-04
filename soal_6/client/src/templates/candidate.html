@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h1 class="text-center">Pemilu 2019</h1>
+            <br><br><br>
+            <div ng-repeat="cn in candidates">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{ cn.name }}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Pasangan: {{ cn.name }}</h4>
+                        <h4>Suara Terkumpul: {{ cn.earned_vote }}</h4>
+                        <button ng-click="vote(cn)" class="btn btn-primary" type="button">Tambah Suara</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
